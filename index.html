@@ -13,38 +13,38 @@
     <meta property="og:image:alt" content="planeta">
 
     <title>Sistema Solar</title>
-    <link rel="icon" href="/images/image-project.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="icon" type="text/css" href="./images/image-project.png">
 </head>
 <body>
     <h1 class="title">Calcular el peso de un objeto en un planeta</h1>
-    <label for="mass"></label>
-    <input type="text" name="user_mass" id="mass" class="input-mass" placeholder="Ingrese masa en kilogramos...">
-    <label for="select-planet"></label>
-    <select name="user_select" id="select-planet">
-        <option value="0">(Seleccione un planeta)</option>
-        <option value="1">Mercurio</option>
-        <option value="2">Venus</option>
-        <option value="3">Tierra</option>
-        <option value="4">Luna</option>
-        <option value="5">Marte</option>
-        <option value="6">Jupiter</option>
-        <option value="7">Saturno</option>
-        <option value="8">Urano</option>
-        <option value="9">Neptuno</option>
-        <option value="10">Pluton</option>
-    </select>
-    <button class="btn">Calcular Peso</button>
+    <div class="btn-container">
+        <label for="mass"></label>
+        <input type="text" name="user_mass" id="mass" class="input-mass" placeholder="Ingrese masa en kilogramos..." maxlength="7">
+        <label for="select-planet"></label>
+        <select name="user_select" id="select-planet">
+            <option value="0">(Seleccione un planeta)</option>
+            <option value="1">Mercurio</option>
+            <option value="2">Venus</option>
+            <option value="3">Tierra</option>
+            <option value="4">Luna</option>
+            <option value="5">Marte</option>
+            <option value="6">Jupiter</option>
+            <option value="7">Saturno</option>
+            <option value="8">Urano</option>
+            <option value="9">Neptuno</option>
+            <option value="10">Pluton</option>
+        </select>
+        <button class="btn">Calcular Peso</button>
+    </div>
+    <p class="alert-message"></p>
     <div class="container">
-        <div class="alert">
-            <p class="alert-message"></p>
-        </div>
         <div class="container-planet">
             <div class="img-cont">
                 <img src="" alt="">
             </div>
+            <p class="text-result"></p>
             <div class="result-cont">
-                <p class="text-result"></p>
                 <p class="result"></p>
             </div>
             <div class="data-cont">
@@ -52,6 +52,6 @@
             </div>
         </div>
     </div>
-    <script src="/js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
