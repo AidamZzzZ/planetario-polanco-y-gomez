@@ -132,4 +132,8 @@ input:focus {
 	.btn-container button {
 		width: 97.5%;
 	}
+
+	img {
+		width: 50%;
+	}
 }
